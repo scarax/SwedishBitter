@@ -1,0 +1,111 @@
+.page-footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.page-footer__wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.page-footer__logo {
+    display: none;
+}
+.page-footer__links-group {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.page-footer__links-group a {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: normal;
+    text-decoration: underline;
+    color: #9a9a9a;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+.page-footer__telephone {
+    display: none;
+}
+@media (min-width: @tablet-width) {
+    .page-footer {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .page-footer__wrapper {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 768px;
+        padding: 0 20px;
+    }
+    .page-footer__logo {
+        display: block;
+        flex-basis: 200px;
+    }
+    .page-footer__logo-image {
+        width: 198px;
+        height: 29px;
+    }
+    .page-footer__links-group {
+        flex-basis: 250px;
+    }
+    .page-footer__telephone {
+        display: block;
+        flex-basis: 210px;
+        text-align: right;
+    }
+    .page-footer__phone-number {
+        position: relative;
+        padding-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: @text-clr;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            transform: translateY(-50%);
+            background-image: url(../img/phone-icon.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .page-footer__description {
+        display: block;
+        font-size: 12px;
+        line-height: 18px;
+        color: #9a9a9a;
+    }
+}
+@media (min-width: @desktop-width) {
+    .page-footer {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .page-footer__wrapper {
+        max-width: 1200px;
+        padding: 0 15px;
+    }
+    .page-footer__links-group {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        flex-basis: 630px;
+    }
+    .page-footer__links-group a {
+        margin-right: 40px;
+        margin-bottom: 0;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.participation {
+    padding-top: 5px;
+}
+.participation__wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.participation__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+.participation__info {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.participation__duration {
+    display: inline-block;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+@media (min-width: @tablet-width) {
+    .participation {
+        padding-top: 65px;
+        padding-bottom: 80px;
+    }
+    .participation__wrapper {
+        max-width: 768px;
+        padding: 0 20px;
+    }
+    .participation__content {
+        max-width: 645px;
+        margin: 0 auto;
+        padding: 70px;
+        padding-right: 40px;
+        border: 2px solid #c8dcba;
+    }
+    .participation__title {
+        margin-bottom: 45px;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: left;
+    }
+    .participation__info {
+        font: inherit;
+    }
+    .participation__duration {
+        margin-bottom: 45px;
+        padding: 0;
+        text-align: left;
+    }
+}
+@media (min-width: @desktop-width) {
+    .participation {
+        max-width: 1720px;
+        margin: 0 auto;
+        padding-top: 180px;
+        padding-bottom: 200px;
+        background-image: url(../img/elixir.png);
+        background-repeat: no-repeat;
+        background-position: 0 100px;
+    }
+    .participation__wrapper {
+        max-width: 1200px;
+        padding: 0 15px;
+    }
+    .participation__content {
+        margin-right: 20px;
+        padding-left: 60px;
+        padding-right: 50px;
+        background-color: #fff;
+        border: 1px solid #c8dcba;
+        outline: 19px solid #fff;
+    }
+}
